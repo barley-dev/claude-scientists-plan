@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude 科學家 Team 方案：給老師們的申請參考</title>
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --card: #ffffff;
+    --text: #3d4348;
+    --muted: #6f767c;
+    --line: #e8e5de;
+    --sage: #7f9c8c;
+    --sage-soft: #eef3ef;
+    --blue: #7b93aa;
+    --blue-soft: #edf2f6;
+    --sand: #b59a72;
+    --sand-soft: #f7f1e7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "PingFang TC", "Noto Sans TC", "Helvetica Neue", sans-serif;
+    line-height: 1.8;
+    font-size: 16px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 22px 72px; }
+  header { margin-bottom: 36px; }
+  .tag {
+    display: inline-block; font-size: 13px; color: var(--sage);
+    background: var(--sage-soft); padding: 2px 12px; border-radius: 999px;
+  }
+  h1 { font-size: 28px; font-weight: 600; margin: 14px 0 10px; line-height: 1.4; }
+  .lead { color: var(--muted); margin: 0; }
+  section {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; padding: 26px 28px; margin-bottom: 20px;
+  }
+  h2 { font-size: 19px; font-weight: 600; margin: 0 0 14px; }
+  h2 .num { color: var(--sage); margin-right: 6px; }
+  p { margin: 0 0 12px; }
+  ul, ol { margin: 0; padding-left: 1.3em; }
+  li { margin-bottom: 6px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 6px 0 12px; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 500; font-size: 14px; }
+  .price { font-weight: 600; color: var(--sage); }
+  .note { font-size: 14px; color: var(--muted); }
+  .tips { background: var(--blue-soft); border-color: #dfe7ee; }
+  .tips h2 { color: #4f6577; }
+  .aside { background: var(--sand-soft); border-color: #eee3d1; }
+  .aside h2 { color: #7d6646; }
+  .check li { list-style: none; position: relative; padding-left: 4px; }
+  .check { padding-left: 1.4em; }
+  .check li::before { content: "○"; position: absolute; left: -1.3em; color: var(--blue); }
+  a { color: #5d7f95; }
+  footer { font-size: 13px; color: var(--muted); margin-top: 32px; }
+  footer ul { padding-left: 1.2em; }
+  @media (max-width: 560px) {
+    section { padding: 20px 18px; }
+    h1 { font-size: 23px; }
+    table { font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <span class="tag">學術研究資源分享</span>
+  <h1>Claude 科學家 Team 方案：<br>大學 PI 可以申請的 AI 資源</h1>
+  <p class="lead">Anthropic 在 2026 年 8 月推出給研究人員的優惠方案，大學教師可用學校信箱申請。我自己申請後用了一個多月，覺得對研究和教學工作很有幫助，整理給有興趣的老師參考。</p>
+</header>
+
+<section>
+  <h2><span class="num">01</span>方案內容</h2>
+  <p>全球首批 10,000 席，開放給認可大學或非營利研究機構的 PI（或同等職位）申請，優惠期 12 個月。</p>
+  <table>
+    <tr><th>席位</th><th>優惠價</th><th>目前原價</th><th>用量（以個人 Pro 為 1）</th></tr>
+    <tr><td>Standard</td><td class="price">免費</td><td>$20／月</td><td>1.25 倍</td></tr>
+    <tr><td>Premium</td><td class="price">$15／月</td><td>$100／月</td><td>6.25 倍</td></tr>
+  </table>
+  <ul>
+    <li>一組 1 至 25 席，可以邀請研究生一起使用</li>
+    <li>Premium 的用量和個人 Max 5x（$100／月）差不多，甚至略高</li>
+    <li>席位不含 API 額度；需要 API 的話，另有 AI for Science 補助可以申請</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="num">02</span>我的使用心得</h2>
+  <ul>
+    <li>我用實驗室的 workspace 處理日常的寫作、資料整理與程式工作，至今沒有遇到用量不夠的情況</li>
+    <li>不常用 AI 的老師，免費的 Standard 席位就很夠用</li>
+    <li>它屬於商業方案，資料保護比個人訂閱更完整（細節見下方）</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="num">03</span>申請步驟</h2>
+  <ol>
+    <li>打開<a href="https://claude.com/programs/team-plan-for-scientists" target="_blank">官方方案頁</a>，用<strong>學校信箱</strong>登入或註冊</li>
+    <li>選 Standard 或 Premium，填寫機構與研究資料</li>
+    <li>等待資格審核（第三方介紹指出約 5 至 7 個工作天）</li>
+    <li>通過後建立 workspace，用學校信箱邀請學生</li>
+    <li>原本有個人訂閱的老師，可以等新方案確定能用再取消舊的。兩個帳號的對話與 Projects 無法互相搬移，Gmail 帳號也無法加入學校的 workspace</li>
+  </ol>
+</section>
+
+<section class="tips">
+  <h2>申請前可以先了解的幾件事</h2>
+  <p>我讀了官方條款和隱私說明。整體來說條件很單純，以下幾點了解一下就好：</p>
+  <table>
+    <tr><th>項目</th><th>說明</th></tr>
+    <tr><td>沒有附帶要求</td><td>條款沒有要求填寫問卷、提供案例、署名或在論文中致謝</td></tr>
+    <tr><td>一年後自動續約</td><td>沒有取消的話，會以屆時的價格續約，建議在第 11 個月時評估要不要繼續</td></tr>
+    <tr><td>90 天沒有使用</td><td>整組 90 天都沒人使用，可能恢復原價，官方會先 email 通知</td></tr>
+    <tr><td>方案可能調整</td><td>和多數優惠一樣，Anthropic 保留修改或結束方案的權利</td></tr>
+  </table>
+</section>
+
+<section class="tips">
+  <h2>關於資料隱私</h2>
+  <p>商業條款明文規定，Anthropic 不會用你的對話與檔案訓練模型。只有兩種情況例外，留意一下就可以避免：</p>
+  <ul>
+    <li><strong>按讚／倒讚回饋：</strong>按下去時，整段對話會傳給 Anthropic，可能用於改進模型，保存 5 年。管理員可以在設定中關閉這個功能</li>
+    <li><strong>用個人帳號：</strong>個人 Free、Pro、Max 帳號適用另一套消費者條款，研究資料建議只在學校的 workspace 處理</li>
+  </ul>
+  <p class="note">其他：刪除的對話會在 30 天內從伺服器清除；學生個資、醫療資料等敏感內容，和使用其他雲端服務一樣，先想一下再放。</p>
+</section>
+
+<section class="aside">
+  <h2>為什麼會有這麼好的條件？</h2>
+  <p>官方說法是要支持研究社群。從商業角度看，這也是常見的推廣方式：先讓研究人員養成使用習慣，一年後部分使用者會轉為付費；同期 OpenAI 也推出了類似方案，各家都在爭取學術界的使用者。對我們來說，了解這一點就好，不影響現在申請。</p>
+</section>
+
+<section>
+  <h2>加入後建議做的設定</h2>
+  <ul class="check">
+    <li>在 Organization settings › Data and privacy 關閉「Rate chats」</li>
+    <li>請學生統一用學校 workspace 處理研究資料</li>
+    <li>在行事曆設定第 11 個月的提醒，評估是否續約</li>
+  </ul>
+</section>
+
+<footer>
+  <p>整理日期：2026-10-04。內容依官方頁面整理，條款以官方最新版本為準。</p>
+  <ul>
+    <li><a href="https://www.anthropic.com/news/expanding-support-for-scientists" target="_blank">官方公告</a></li>
+    <li><a href="https://anthropic.com/legal/team-plan-for-scientists-terms" target="_blank">優惠條款</a></li>
+    <li><a href="https://support.claude.com/en/articles/16634237-claude-team-plan-for-scientists" target="_blank">方案說明</a></li>
+    <li><a href="https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training" target="_blank">資料是否用於訓練</a></li>
+    <li><a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data" target="_blank">資料保存期限</a></li>
+  </ul>
+</footer>
+
+</div>
+</body>
+</html>
